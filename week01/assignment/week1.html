@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>IMG 212 Week 1</title>
+	<meta charset="utf-8" />
+	<style>
+		:root {
+			font-size: 14px;
+			--main-color: #118c91;
+			--main-font: Arial, sans-serif;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		#title {  /* (1,0,0) */
+			width: 100%;
+			background: var(--main-color);
+			padding: 10px;
+			
+		}
+
+		header h1{
+			font-family: var(--main-font);
+			text-align: center;
+			color: #fff;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+
+		ul {
+			border: 2px solid #eee;
+			list-style: none;
+			padding: 10px 15px;
+		}
+
+		ul li { /* (0,0,2) */
+			border: inherit;
+		}
+
+		.section-margin {
+			margin-bottom: 3em;
+		}
+
+		.btn {
+			background: var(--main-color);
+			padding: 10px 20px;
+			width: 30vmin;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		.btn a { /* (0,1,1) */
+			text-decoration: none;
+			color: #fff;
+			font-family: var(--main-font);
+		}
+
+		.footer {
+			width: 100%;
+			background-color: #eee;
+			padding: 30px 0px;
+		}
+
+		.footer .container { /* (0,2,0)*/
+			margin: auto;
+			width: 80%;
+		}
+		
+
+	</style>
+</head>
+
+<body>
+	<header id="title" class="section-margin">
+		<h1>IMG 212 Assignment 1</h1>
+	</header>
+
+	<section class="section-margin">
+		<p>Produce an HTML page similar to the one we created in class. Please use standards compliant HTML5 that includes the following:</p>
+		<ul>
+			<li>A 'header' area with an 'h1' element that includes the title of your assignment (i.e. IMG 212 Assignment 1).</li>
+			<li>Two 'p' elements with placeholder text.</li>
+			<li>A 'ul' or 'ol' element that includes at least three li elements.</li>
+			<li>At least two 'a' elements somewhere in the page.</li>
+		</ul>
+	</section>
+
+	<section class="section-margin">
+		<p>Now develop the CSS:</p>
+		<p>Use the 'style' element in your HTML document 'head' to add the following rules:</p>
+		<ul>
+			<li>A :root rule to set the font size to 14px.</li>
+			<li>A p rule that uses rems to set font-size (any size you like, as long as it is visible).</li>
+			<li>A ul rule that adds a border (any type) around the 'ul' element.</li>
+			<li>An li rule that forces the border to inherit to all 'li' elements.</li>
+			<li>A class that modifies margin-bottom spacing between your choice of elements using ems.</li>
+			<li>Add four additional rulesets (and modify your HTML, if necessary) to produce selectors of each of the following specificities:
+				<ul>
+					<li>1,0,0</li>
+					<li>0,2,0</li>
+					<li>0,0,2</li>
+					<li>0,1,1</li>
+				</ul>
+			</li>
+			<li>Create a custom property of your choice and apply it within at least two rulesets (<a href="https://livebook.manning.com/book/css-in-depth/chapter-2/">use listings 2.27, 2.28 and 2.29</a>).</li>
+		</ul>
+	</section>
+		
+	<div class="footer">
+		<div class="container">
+			<p>Andres Navarro S.</p>
+			<p>View my <a href="https://gitlab.com/andresns">gitlab</a> and <a href="https://github.com/andresns">github</a> profiles.</p>
+			<div class="btn"><a href="mailto:andresm.navarro@gmail.com">Email me!</a></div>
+
+		</div>
+	</div>
+
+	
+
+</body>
+
+</html>
