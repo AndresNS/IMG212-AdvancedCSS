@@ -1,0 +1,8 @@
+Follow section 4.5 of the textbook to produce your own grid system (if you've already done this, fantastic, you're ahead of the game). At the end of the section you should have code similar to listing 4-19 in the text, with the following differences:
+
+Your page must have a different focus - it should not be about the 'Franklin Running Club'. You may use the same header and colour scheme, but the content must be different.
+Your grid layout must be different from that in listing 4-19. Your layout should have at least seven cells spread across at least two rows.
+You may use the box formatting context for some cells, but you must include at least two other cell layouts. One option, for example, is to include a cell layout for just an image; another might be to include text and image in a newspaper format.
+All CSS classes must be named appropriately and must follow the same naming scheme. You may need to modify some existing class names (i.e. from listing 4-18) to ensure they conform properly.
+You may use placeholder text and content, but it should be clear that your intended content is different from the that of listing 4-19.
+You may use the attached code as a base, if you like.
