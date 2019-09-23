@@ -47,8 +47,7 @@ main {
     clear: both;
 }
 
-[class*="column-"] {
-    /* Targets all elements with a class attribute that includes “column-” */
+[class*="column-"] { /* Targets all elements with a class attribute that includes “column-” */
     float: left;
     padding: 0 0.75em;
     margin-top: 0;
@@ -117,17 +116,9 @@ main {
     margin-right: 1.5em;
 }
 
-.media-image-only {
-    width: 100%;
-}
-
 .media-body {
     margin-top: 0;
     overflow: auto;
-}
-
-.media-body-wrapped {
-    margin-top: 0;
 }
 
 .media-body h4 {
