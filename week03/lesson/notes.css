@@ -1,8 +1,8 @@
 /* Flexbox */
 
 /*
-Main axis: horizontal (start)
-cross axis: vertical (end)
+Main axis: horizontal
+cross axis: vertical
 
 flex: --> flex-grow, flex-shrink, flex-basis  //it has to be assign to the item inside the container
 
@@ -14,6 +14,31 @@ flex-direction (default row)
 flex-wrap (default nowrap)
 flex-flow shortcode for flex-direction flex-wrap
 
+justify-content: horizontal axis
+    flex-start
+    flex-end
+    center
+    space-around
+    space-between  //move the first and last elementes to the furthest edges
 
+align-items: vertical axis
+    stretch (default)
+    flex-start
+    flex-end
+    center
+    baseline //align items based on the text baseline
+
+align-content: only matters when elements are setted to wrap
+    flex-start (default)
+    flex-end
+    center
+    space-bewteen
+    space-around
+
+place-content short code for align-content and justify-content
+
+align-self: overrides alignt-items for specific item
+
+order: (default is 0, -1 is first)
 
 */
