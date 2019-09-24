@@ -1,0 +1,19 @@
+/* Flexbox */
+
+/*
+Main axis: horizontal (start)
+cross axis: vertical (end)
+
+flex: --> flex-grow, flex-shrink, flex-basis  //it has to be assign to the item inside the container
+
+flex-grow: 1 default
+flex-shrink: 1 default
+flex-basis: 0% default
+
+flex-direction (default row)
+flex-wrap (default nowrap)
+flex-flow shortcode for flex-direction flex-wrap
+
+
+
+*/

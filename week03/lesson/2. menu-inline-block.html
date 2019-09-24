@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IMG 212 - Week 3 - Float Menu</title>
+    <meta charset="utf-8" />
+    <style>
+
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-color: #eee;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body * + * {
+      margin-top: 1.5em;
+    }
+
+    .nav {
+      background-color: #333;
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .nav > li {
+      display: inline-block;
+      margin-top: 0;
+    }
+
+    .nav > li > a {
+      color: white;
+      display: block;
+      padding: 14px 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .nav > li > a:hover {
+      background-color: #111;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#long">Realy long menu name</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flexbox</title>
+  <style>
+    :root {
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body * + * {
+      margin-top: 1.5em;
+    }
+
+    .outer-container {
+      display: flex;
+      border: 10px solid pink;
+      flex-direction: row;
+    }
+
+    .row-container {
+      border: thin solid blue;
+      display: flex;
+      flex: 2;
+      height: 400px;
+      margin-right: 1.5em;
+      /* align-content: baseline; */
+      /* align-items: baseline; */
+      /* flex-wrap: wrap; */
+      /* justify-content: center; */
+    }
+
+    .row-container > div {
+      /* flex: 1; */
+    }
+
+    .box {
+      border: thin solid blue;
+      height: 200px;
+      margin-top: 0;
+      /* flex: 1; */
+      /* margin-right: 1.5em; */
+    }
+
+    .first {
+      background-color: pink;
+    }
+
+    .second {
+      background-color: skyblue;
+    }
+
+    .second > p {
+      margin-top: 0;
+    }
+
+    .third {
+      background-color: lightgreen;
+    }
+
+    .container-neighbour {
+      background-color: lightgrey;
+      flex: 1;
+      margin-top: 0;
+    }
+
+    .column-container {
+      display: flex;
+      flex-direction: column;
+      height: 400px;
+    }
+
+    .neighbour-main {
+      flex: 1 1 auto;
+    }
+
+    .clearfix::before,
+    .clearfix::after {
+      content: " ";
+      display: table;
+    }
+
+    .clearfix::after {
+      clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outer-container">
+    <div class="row-container">
+      <div class="box first">first box</div>
+      <div class="box second"><p>second box</p></div>
+      <div class="box third">third box</div>
+    </div>
+    <div class="container-neighbour">
+      <div class="column-container">
+        <div class="neighbour-main">The neighbour</div>
+        <div class="neighbour-footer">The footer</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

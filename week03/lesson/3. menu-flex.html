@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IMG 212 - Week 3 - Flexbox Menu</title>
+    <meta charset="utf-8" />
+    <style>
+
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      background-color: #eee;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body * + * {
+      margin-top: 1.5em;
+    }
+
+    .flex {
+      background-color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-around; */
+      list-style-type: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .flex > li {
+      margin-top: 0;
+      padding: 1em 2em;
+      margin-right: 1em;
+      /* flex: 1;  */
+      /* flex: --> flex-grow, flex-shrink, flex-basis */
+      /* flex: auto;  //1 1 auto; change to 1 - 1 1 0 */
+    }
+
+    li a {
+      color: white;
+      display: block;
+      padding: 14px 16px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    .menu-right {
+      /* margin-left: auto; */
+    }
+
+    </style>
+  </head>
+  <body>
+
+  <ul class="flex">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#long">Realy long menu name</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#long">Realy long menu name</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="menu-right"><a href="#about">About</a></li>
+  </ul>
+
+  </body>
+</html>
