@@ -44,6 +44,7 @@
       .grid-container {
         display: grid;
         grid-gap: 0.2em;
+        /* grid-auto-flow: dense; */
 
         /*************** Part 1 - basic grid layout ***************/
             
@@ -76,15 +77,15 @@
         /*************** Part 4 - With element targeting (see below) ***************/
         
         /* We can label the lines */
-        grid-template-columns: [left] 1fr 1fr [middle] 1fr [right];
-        grid-template-rows: [top] 1fr 1fr [hello] 1fr [bottom];
+        /* grid-template-columns: [left] 1fr 1fr [middle] 1fr [right];
+        grid-template-rows: [top] 1fr 1fr [hello] 1fr [bottom]; */
        
 
         /*************** Part 5 - With overlapping elements ***************/
-        /*  
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        */
+         
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; */
+       
 
         /*************** Part 6 - An actual layout ***************/
         /*
@@ -93,15 +94,14 @@
         */
 
         /*************** Part 7 - auto-flow and density ***************/
-        /*     
-        grid-template-areas: "top top top top"
-                              "left left right right"
-                              "bottom bottom bottom bottom";
-
+        
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "top     top    top    top"
+                              "left   left   right  right"
+                              "bottom bottom bottom bottom";
         grid-auto-flow: dense;
-        */
+       
       }
 
       /*************** Part 3b - stretch last element ***************/
@@ -118,24 +118,23 @@
       /*************** Part 4 - with element targeting ***************/
       .grid-container > li.one {
             
-        grid-column: left / right;
+        /* grid-column: left / middle; */
         /* Using the line labels */
-        grid-row: top / bottom;
+        /* grid-row: top / bottom; */
         /* It doesn't look as we expect, because we haven't set a height for the row. */
-       
       }
 
       /*************** Part 5 - overlapping ***************/
       .grid-container > li.thirteen {
-        /*     
-        grid-column: 1 / 2;
-        grid-row: 2 / 4;
-        */
+            
+        /* grid-column: 1 / 2;
+        grid-row: 2 / 4; */
+       
       }
 
       /*************** Part 6 - an actual layout ***************/
-      /*
-      .grid-container>li.one,
+      
+      /* .grid-container>li.one,
       .grid-container>li.two {
         grid-column: 1 / 4;
       }
@@ -148,11 +147,11 @@
       .grid-container>li.eight,
       .grid-container>li.ten {
         grid-row: span 2;
-      } 
-      */
+      }  */
+     
 
       /*************** Part 7 - auto-flow ***************/
-      /*   
+        
       .grid-container>li.one,
       .grid-container>li.four,
       .grid-container>li.five,
@@ -161,51 +160,51 @@
       .grid-container>li.thirteen {
         grid-column: 1 / 2;
       } 
-      */
+     
 
-      /*   
+        
       .grid-container>li.two,
       .grid-container>li.five,
       .grid-container>li.six {
         grid-column: 2 / 4;
       }
-      */
-      /* 
+     
+      
       .grid-container>li.three,
       .grid-container>li.seven,
       .grid-container>li.nine {
         grid-column: 3 / 4;
       } 
-      */
-      /* 
-      .grid-container>li.eight,
+     
+      
+      /* .grid-container>li.eight,
       .grid-container>li.ten {
         grid-column: 4 / 5;
-      }  
-      */
-      /* 
+      }   */
+     
+      
       .grid-container>li.one {
         grid-area: top;
       } 
-      */
-      /* 
+     
+      
       .grid-container>li.two,
       .grid-container>li.three {
         grid-area: left;
       }
-      */
-      /* 
+     
+      
       .grid-container>li.four,
       .grid-container>li.five {
         grid-area: right;
       } 
-      */
+     
 
-      /* 
+      
       .grid-container>li.four {
         grid-area: bottom;
       }
-      */
+     
     </style>
   </head>
 
