@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)https://learn.nic.bc.ca/bbcswebdav/pid-536687-dt-content-rid-1625783_1/courses/110430/IMG%20212%20Week%204.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>IMG 212 Week 4</title>
+
+    <style>
+      body {
+        background: #f6f3ea;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: white;
+        font-family: Avenir, Heveltica, Arial, san-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      li {
+        padding: 1em;
+        background: #f9423a;
+      }
+
+      li.two,
+      li.six,
+      li.thirteen {
+        background: #444;
+      }
+
+      li.eight,
+      li.ten {
+        background: #4794b8;
+      }
+
+      li.three,
+      li.seven,
+      li.nine {
+        background: #ff9124;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-gap: 0.2em;
+
+        /*************** Part 1 - basic grid layout ***************/
+            
+        /* grid-template-columns: 2fr 1fr;  */
+        /*
+        two columns, the first is twice  as big as the second.
+        fr = fraction
+        you can use pixels and % too, but is better to use fractions.
+        */
+       
+
+        /*************** Part 2a - Make it ratio based ***************/
+            
+        /* grid-template-columns: 1fr 2fr 1fr; */
+       
+
+        /*************** Part 2b - Make it ratio based ***************/
+        
+        /* grid-template-columns: 1fr 2fr 3fr; */
+       
+
+        /*************** Part 3a - With rows (see 3b below) ***************/
+            
+        /* grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr; */
+
+        /* If theres more rows than the specified, it will set them a default value of 1fr. */
+       
+
+        /*************** Part 4 - With element targeting (see below) ***************/
+        
+        /* We can label the lines */
+        grid-template-columns: [left] 1fr 1fr [middle] 1fr [right];
+        grid-template-rows: [top] 1fr 1fr [hello] 1fr [bottom];
+       
+
+        /*************** Part 5 - With overlapping elements ***************/
+        /*  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        */
+
+        /*************** Part 6 - An actual layout ***************/
+        /*
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2.5fr 2.5fr 1fr;
+        */
+
+        /*************** Part 7 - auto-flow and density ***************/
+        /*     
+        grid-template-areas: "top top top top"
+                              "left left right right"
+                              "bottom bottom bottom bottom";
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: dense;
+        */
+      }
+
+      /*************** Part 3b - stretch last element ***************/
+      .grid-container > li.thirteen {
+        
+        /* grid-column: 1 / 4; */
+        /* short form for grid column start and grid column end.
+        starts at grid line 1 and ends at grid line 4 */
+        
+        /* grid-column: span 2; */
+         /* Specifies the amount of columns that it will use. */  
+      }
+
+      /*************** Part 4 - with element targeting ***************/
+      .grid-container > li.one {
+            
+        grid-column: left / right;
+        /* Using the line labels */
+        grid-row: top / bottom;
+        /* It doesn't look as we expect, because we haven't set a height for the row. */
+       
+      }
+
+      /*************** Part 5 - overlapping ***************/
+      .grid-container > li.thirteen {
+        /*     
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        */
+      }
+
+      /*************** Part 6 - an actual layout ***************/
+      /*
+      .grid-container>li.one,
+      .grid-container>li.two {
+        grid-column: 1 / 4;
+      }
+
+      .grid-container>li.three,
+      .grid-container>li.four {
+        grid-column: span 2;
+      }
+
+      .grid-container>li.eight,
+      .grid-container>li.ten {
+        grid-row: span 2;
+      } 
+      */
+
+      /*************** Part 7 - auto-flow ***************/
+      /*   
+      .grid-container>li.one,
+      .grid-container>li.four,
+      .grid-container>li.five,
+      .grid-container>li.eleven,
+      .grid-container>li.twelve,
+      .grid-container>li.thirteen {
+        grid-column: 1 / 2;
+      } 
+      */
+
+      /*   
+      .grid-container>li.two,
+      .grid-container>li.five,
+      .grid-container>li.six {
+        grid-column: 2 / 4;
+      }
+      */
+      /* 
+      .grid-container>li.three,
+      .grid-container>li.seven,
+      .grid-container>li.nine {
+        grid-column: 3 / 4;
+      } 
+      */
+      /* 
+      .grid-container>li.eight,
+      .grid-container>li.ten {
+        grid-column: 4 / 5;
+      }  
+      */
+      /* 
+      .grid-container>li.one {
+        grid-area: top;
+      } 
+      */
+      /* 
+      .grid-container>li.two,
+      .grid-container>li.three {
+        grid-area: left;
+      }
+      */
+      /* 
+      .grid-container>li.four,
+      .grid-container>li.five {
+        grid-area: right;
+      } 
+      */
+
+      /* 
+      .grid-container>li.four {
+        grid-area: bottom;
+      }
+      */
+    </style>
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <ul class="grid-container">
+      <li class="one">One</li>
+      <li class="two">Two</li>
+      <li class="three">Three</li>
+      <li class="four">Four</li>
+      <li class="five">Five</li>
+      <li class="six">Six</li>
+      <li class="seven">Seven</li>
+      <li class="eight">Eight</li>
+      <li class="nine">Nine</li>
+      <li class="ten">Ten</li>
+      <li class="eleven">Eleven</li>
+      <li class="twelve">Twelve</li>
+      <li class="thirteen">Thirteen</li>
+    </ul>
+  
+
+</body></html>

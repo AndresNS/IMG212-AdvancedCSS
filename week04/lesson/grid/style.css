@@ -1,0 +1,13 @@
+/* 
+TERMINOLOGY
+
+grid-line: The structure of the grid.
+can be horizontal or vertical and lie on either side of a row or column.
+
+grid-track: the space between two adjacent grid lines. Can be horizontal (rows) or vertical (columns).
+
+grid cell: A singla space on the grid, where a horizontal grid track and a vertical grid track overlap.
+
+grid area: A retangular area on the grid between two vertical grid lines and two horizontal grid lines, made up by one or more grid cells.
+*/
+
