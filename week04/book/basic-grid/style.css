@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Defines three columns of equal width */
+    grid-template-rows: 1fr 1fr; /* Defines two rows of equal height */
+    grid-gap: 0.5em; /* Applies a gutter between each grid cell */
+}
+
+.grid > * {
+    background-color: darkgray;
+    color: white;
+    padding: 2em;
+    border-radius: 0.5em;
+}
+
