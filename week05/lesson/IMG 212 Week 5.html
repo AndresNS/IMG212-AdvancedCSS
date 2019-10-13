@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>IMG 212 Week 4</title>
+
+    <style>
+      body {
+        background: #f6f3ea;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: white;
+        font-family: Avenir, Heveltica, Arial, san-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      li {
+        padding: 1em;
+        background: #f9423a;
+      }
+
+      li.two,
+      li.six,
+      li.thirteen {
+        background: #444;
+      }
+
+      li.eight,
+      li.ten {
+        background: #4794b8;
+      }
+
+      li.three,
+      li.seven,
+      li.nine {
+        background: #ff9124;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-gap: 0.2em;
+
+
+        /* Part 1 - Sets a minimum column width of 300px and auto-fills the grid and an implicit horizontal grid track size of 1fr */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-rows: 1fr;
+
+
+        /* Part 2 - Grid auto flow: dense, sparse, row, column */
+        grid-auto-flow: row;
+        
+
+        /* Part 3 - Implicit rows */        
+        grid-auto-rows: 2fr;
+        
+
+
+        /* Part 4a - Grid auto flow: dense */
+        grid-auto-flow: dense;
+        
+
+      }
+      
+      /* Part 4b - featured items 2 x 2 */
+      
+      .grid-container .featured {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+     
+      
+    </style>
+  </head>
+
+  <body>
+    <ul class="grid-container">
+      <li class="one featured">One</li>
+      <li class="two">Two</li>
+      <li class="three featured">Three</li>
+      <li class="four featured">Four</li>
+      <li class="five">Five</li>
+      <li class="six">Six</li>
+      <li class="seven featured">Seven</li>
+      <li class="eight">Eight</li>
+      <li class="nine">Nine</li>
+      <li class="ten">Ten</li>
+      <li class="eleven">Eleven</li>
+      <li class="twelve">Twelve</li>
+      <li class="thirteen">Thirteen</li>
+    </ul>
+  
+
+</body></html>

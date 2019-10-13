@@ -1,0 +1,223 @@
+:root {
+    box-sizing: border-box;
+    --main-font: Arial, Helvetica, sans-serif;
+    --dark-color: #212121;
+    --light-color: #C1C1C1;
+    --secondary-color: #ea4b12;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);;
+}
+
+body *+* {
+    margin-top: 1.5em;
+}
+
+/* HEADER */
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .logo {
+    height: 200px;
+}
+
+.site-nav {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.site-nav > li {
+    margin-top: 0;
+}
+
+.site-nav > li > a {
+    font-size: 1.5em;
+    background-color: bisque;
+    padding: .5em 1em;
+    color: #fff;
+    text-decoration: none;
+}
+.site-nav > li > a:hover {
+    background-color: aqua;
+}
+
+/* MAIN */ 
+
+.wrapper {
+    /* width: 80%;
+    margin: 0 auto; */
+}
+
+/* COLORS */
+
+.colors-container {
+    display: flex;
+    background-color: #000;
+}
+
+.color {
+    text-decoration: none;
+    margin: 0;
+    width: 20%;
+    display: flex;
+}
+
+.color figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.color img {
+    object-fit: cover;
+    max-width: 100%;
+    flex-grow: 1;
+    
+}
+
+.color figcaption{
+    background-color: #000;
+    margin-top: 0;
+}
+
+.color figcaption {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em 1.5em;
+    font-weight: bold;
+}
+
+
+/* GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-flow: dense;
+    background-color: #000;
+    /* max-width: 80vw;
+    margin: 0 auto; */
+
+}
+
+.grid-container>figure, .grid-container>a {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.grid-container> a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 2em 0;
+    font-weight: bold;
+}
+
+.grid-container img {
+    object-fit: cover;
+    max-width: 100%;
+    flex-grow: 1;
+    opacity: 0.8;
+}
+.grid-container img:hover {
+    opacity: 1;
+}
+
+.jace {
+    grid-column: span 4;
+    grid-row: 1 / 3;
+}
+
+.iona {
+    grid-column: span 4;
+    grid-row: 1 / 2;
+}
+
+.nicol-bolas {
+    grid-column: span 4;
+    grid-row: 1 / 4;
+}
+
+.join {
+    grid-column: span 4;
+    grid-row: 2 / 3;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 4px solid #fff;
+}
+
+.dryad {
+    grid-column: span 3;
+    grid-row: 3 / 4;
+}
+
+.dragon {
+    grid-column: span 5;
+    grid-row: 3 / 4;
+}
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-auto-flow: dense;
+    background-color: #000;
+}
+
+.grid-container>figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container img {
+    object-fit: cover;
+    max-width: 100%;
+    flex-grow: 1;
+    opacity: 0.8;
+}
+.grid-container img:hover {
+    opacity: 1;
+}
+
+.iona {
+    grid-column: span 5;
+    grid-row: 1 / 5;
+}
+
+.jace {
+    grid-column: span 2;
+    grid-row: 1 / 5;
+}
+
+.nicol-bolas {
+    grid-column: span 5;
+    grid-row: 1 / 7;
+}
+
+.dryad {
+    grid-column: span 3;
+    grid-row: 5 / 7;
+}
+
+.dragon {
+    grid-column: span 4;
+    grid-row: 5 / 7;
+} */

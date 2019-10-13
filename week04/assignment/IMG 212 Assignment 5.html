@@ -26,7 +26,6 @@
 			display: grid;
 			grid-gap: .8em;
 			grid-template-columns: repeat(auto-fill, 1fr);
-			grid-template-rows: repeat(auto-fill, 1fr);
 			grid-auto-flow: dense;
 		}
 
@@ -44,68 +43,67 @@
 		}
 
 		.penny-arcade {
-			grid-column: 1 / 3;
+			grid-column: span 5;
+			grid-row: 1 / 2;
+		}
+		
+		.eight-shots {
+			grid-column: span 3;
+			grid-row: 1 / 3;
+		}
+		
+		.no-sale {
+			grid-column: span 2;
 			grid-row: 1 / 2;
 		}
 
-		.eight-shots {
-			grid-column: 3 / 4;
-			grid-row: 1 / 3;
-		}
-
-		.no-sale {
-			grid-column: 4 / 5;
-			grid-row: 1 / 1;
-		}
-
 		.gypsy {
-			grid-column: 1 / 2;
+			grid-column: span 2;
 			grid-row: 2 / 4;
 		}
-
+		
 		.jukebox {
-			grid-column: 2 / 3;
+			grid-column: span 3;
 			grid-row: 2 / 3;
 		}
 
 		.record-your-voice {
-			grid-column: 2 / 4;
+			grid-column: span 6;
 			grid-row: 3 / 4;
 		}
 
 		.switchblade {
-			grid-column: 4 / 5;
+			grid-column: span 2;
 			grid-row: 2 / 5;
 		}
 
 		.three-shots {
-			grid-column: 1 / 2;
+			grid-column: span 3;
 			grid-row: 4 / 6;
 		}
 
 		.fortune {
-			grid-column: 2 / 3;
+			grid-column: span 2;
 			grid-row: 4 / 7;
 		}
 
 		.newsweek {
-			grid-column: 3 / 4;
+			grid-column: span 3;
 			grid-row: 4 / 5;
 		}
 
 		.target-on {
-			grid-column: 3 / 5;
-			grid-row: 5 / 6;
+			grid-column: span 5;
+			grid-row: span 1;
 		}
 
 		.prize {
-			grid-column: 1 / 2;
-			grid-row: 6 / 7;
+			grid-column: span 3;
 		}
 
+		
 		.tomorrow {
-			grid-column: 3 / 5;
-			grid-row: 6 / 7;
+			grid-column: span 5;
 		}
 	</style>
 </head>
@@ -145,7 +143,7 @@
 		<figure class="target-on">
 			<img src="./img/4.png">
 		</figure>
-		<figure class="prize">
+		<figure class="prize fix">
 			<img src="./img/5.png">
 		</figure>
 		<figure class="tomorrow">
