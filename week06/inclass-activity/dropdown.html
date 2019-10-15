@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)https://learn.nic.bc.ca/bbcswebdav/pid-573060-dt-content-rid-1656047_1/courses/110430/dropdown.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+    body {
+      font-family: Helvetica, Arial, sans-serif;
+      min-height: 200vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 1em auto
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-label {
+      padding: 0.5em 2em 0.5em 1.5em;
+      border: 1px solid #ccc;
+      background-color: #eee;
+    }
+
+    .dropdown-label::after {
+      content: "";
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      border: 0.3em solid;
+      border-color: black transparent transparent;
+    }
+    
+    .dropdown:hover .dropdown-label::after {
+      border-color: transparent transparent black;
+      top: .7em;
+    }
+
+    .dropdown-menu {
+      /* position: absolute; */
+      top: 2.1em;
+      left: 0;
+      min-width: 100%;
+      background-color: #eee;
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    
+    .submenu {
+      padding-left: 0;
+      margin: 0;
+      list-style-type: none;
+      border: 1px solid #999;
+    }
+
+    .submenu > li + li {
+      border-top: 1px solid #999;
+    }
+
+    .submenu > li > a {
+      display: block;
+      padding: .5em 1.5em;
+      background-color: #eee;
+      color: #369;
+      text-decoration: none;
+    }
+
+    .submenu > li > a:hover {
+      background-color: #fff;
+    }
+
+  </style>
+</head>
+
+<body cz-shortcut-listen="true">
+  
+  <div class="container">
+    <nav>
+      <div class="dropdown">
+        <div class="dropdown-label">Main Menu</div>
+        <div class="dropdown-menu">
+          <ul class="submenu">
+            <li><a href="https://learn.nic.bc.ca/">Home</a></li>
+            <li><a href="https://learn.nic.bc.ca/coffees">Coffees</a></li>
+            <li><a href="https://learn.nic.bc.ca/brewers">Brewers</a></li>
+            <li><a href="https://learn.nic.bc.ca/specials">Specials</a></li>
+            <li><a href="https://learn.nic.bc.ca/about">About us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+
+</body></html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>IMG 212 Basic Modal</title>
+  <meta charset="utf-8" />
+  <style>
+    :root {
+      background-color: #C0C0C0;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    .modal-window {
+      background-color: rgb(0,0,0,0.4);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+    }
+    
+    .modal-window>div {
+      background: #fff;
+      color: #444;
+      padding: 1.5em;
+      width: 400px;
+      position: fixed;
+      top: 40vh;
+      right: calc(50vw - 200px);
+    }
+    
+    .modal-close{
+      width: 1em;
+      height: 1em;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      text-indent: 10em;
+      overflow: hidden;
+    }
+
+    .modal-close::after{
+      content: "\00D7";
+      position: absolute;
+      top: 0.1em;
+      left: 0.1em;
+      text-indent: initial;
+      color: black;
+      font-size: 1.2em;
+    }
+
+    .modal-is-open {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <a href="#modal-window" id="open-modal">Open Modal</a>
+  <div id="modal-window" class="modal-window">
+    <div>
+      <a href="#modal-close" id="close-modal" class="modal-close">close</a>
+      <h1>Modal heading</h1>
+      <div>Some content that would appear inside the modal.</div>
+    </div>
+  </div>
+  <script>
+    let modalWindow = document.getElementById("modal-window");
+    let openModal = document.getElementById("open-modal");
+    let closeModal = document.getElementById("close-modal");
+
+    openModal.onclick = function(){
+      modalWindow.classList.add("modal-is-open");
+    };
+
+    closeModal.onclick = function(){
+      modalWindow.classList.remove("modal-is-open");
+    }
+  </script>
+</body>
+</html>

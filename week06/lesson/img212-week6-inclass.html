@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>IMG 212 Week 7</title>
+  <meta charset="utf-8" />
+  <style>
+
+    .container {
+      font-size: 20px;
+      margin: auto;
+      margin-top: 4em;
+      max-width: 90vw;
+    }
+
+    .container-relative {
+      position: relative;
+    }
+
+    .positioned-element {
+      background-color: lightblue;
+      border: thin solid yellow;
+      height: 200px;
+      /* margin: auto; */
+      /* opacity: 0.75; */
+      width: 200px;
+      /* pointer-events: none; */
+      margin: -100px 100px;
+      /* transform: translate(-100px, 100px); */
+      filter: blur(10px);
+    }
+
+    .fixed-position {
+      position: fixed; /* Position the element relative to the viewport */
+      top: 1em;
+      right: 3em;
+      bottom: 1em;
+      left: 3em;
+    }
+
+    .absolute-position {
+      position: absolute; /* position the element relative to the closest ancestor element (the ancestor element must have position: relative)*/
+      z-index: 2;
+      top: 1em;
+      right: 1em;
+      bottom: 1em;
+      left: 1em;
+    }
+
+    .relative-position {
+      position: relative; /* position elements relative to their initial position in the DOM */
+      top: 1em;
+      /* right: 30em; */
+      /* bottom: 1em; */
+      left: 3em;
+    }
+
+    .relative-offset-one {
+      top: calc(-1 * 4em);
+      left: calc(1 * 4em);
+    }
+
+    .relative-offset-two {
+      top: calc(-2 * 4em);
+      left: calc(2 * 4em);
+    }
+
+    .relative-offset-three {
+      top: calc(-3 * 4em);
+      left: calc(3 * 4em);
+    }
+
+    .small-box {
+      background-color: pink;
+      height: 50px;
+      margin-right: 25px;
+      margin-top: 75px;
+      width: 50px;
+    }
+
+    .render-on-top {
+      z-index: 3; /* The element must be positioned */
+      position: relative;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container container-relative">
+    <p class="text"> <a href=""> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit nunc ante, ut consectetur leo sodales at. Quisque at accumsan magna, eu tincidunt ligula.</a> Nam placerat, magna eget venenatis congue, ex arcu varius justo, commodo dictum velit ligula nec ante. Ut egestas pretium velit a convallis. Etiam bibendum sagittis arcu auctor porttitor. Sed laoreet posuere cursus. Ut mi magna, sagittis in fermentum a, lacinia nec lectus. Donec vitae venenatis risus. Mauris faucibus quis enim in pulvinar. Etiam ornare porta lectus sit amet laoreet.</p>
+    <div class="positioned-element"></div>
+    <p class="text">Vestibulum ac pharetra magna, porttitor euismod justo. Curabitur cursus aliquam orci in euismod. Nulla turpis est, luctus tristique tincidunt congue, sodales et orci. Aliquam placerat vitae mauris vel tempus. Nulla id metus a libero pellentesque malesuada. Sed eu ullamcorper massa. Vestibulum maximus, urna ac placerat iaculis, augue nisi dapibus nibh, commodo dignissim arcu velit vitae urna. Morbi a nisi sit amet ligula pulvinar viverra ut eu eros. Morbi congue, ex et ornare pharetra, purus urna gravida erat, eu ultrices tortor nisi fermentum dui.</p>
+    <p class="text">Proin vel pretium augue. Integer mauris magna, sodales lobortis viverra in, pellentesque at nulla. Sed lacinia posuere ipsum, quis volutpat lectus malesuada vitae. Donec faucibus facilisis neque eget tempor. Vestibulum tempor maximus pulvinar. Nulla elementum ullamcorper dignissim. Sed at mauris at enim venenatis pulvinar. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur in vehicula mi. Morbi semper turpis vel lectus maximus blandit. Donec mattis tempor nisl sit amet laoreet. Integer sit amet mi eu purus aliquam mattis ac vitae nisi. Praesent vitae felis in sem mattis ornare. Pellentesque volutpat fringilla felis, tempor malesuada ipsum malesuada non. Nunc consectetur ac arcu et malesuada. Aenean vitae nulla id nibh porttitor imperdiet nec vel lectus.</p>
+    <p class="text">Fusce sollicitudin lorem ut quam aliquet ullamcorper. Donec eu lorem at lorem viverra tristique. Nulla nunc libero, efficitur nec erat ac, blandit feugiat velit. Fusce scelerisque auctor justo, in sagittis arcu bibendum vitae. Praesent eget malesuada felis. Etiam ut condimentum dui. Phasellus at arcu vitae arcu semper pulvinar tempor sit amet risus. Etiam congue, ex vel rhoncus pretium, dui justo sagittis est, id auctor enim lacus nec mi. Nullam maximus fermentum arcu, at scelerisque risus rhoncus quis. Pellentesque consectetur ligula vel blandit rhoncus. Phasellus eget gravida eros. Duis varius elementum erat, ac efficitur dolor facilisis sit amet. Quisque sollicitudin augue in pharetra scelerisque. Mauris sollicitudin justo nunc, sit amet maximus augue tempus eu. Nullam dapibus venenatis eros quis mattis.</p>
+  </div>
+</body>
+</html>
