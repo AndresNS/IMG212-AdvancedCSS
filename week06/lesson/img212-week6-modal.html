@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <title>IMG 212 Basic Modal</title>
   <meta charset="utf-8" />
@@ -17,7 +18,7 @@
     }
 
     .modal-window {
-      background-color: rgb(0,0,0,0.4);
+      background-color: rgb(0, 0, 0, 0.4);
       position: fixed;
       top: 0;
       right: 0;
@@ -25,7 +26,7 @@
       left: 0;
       display: none;
     }
-    
+
     .modal-window>div {
       background: #fff;
       color: #444;
@@ -35,8 +36,8 @@
       top: 40vh;
       right: calc(50vw - 200px);
     }
-    
-    .modal-close{
+
+    .modal-close {
       width: 1em;
       height: 1em;
       position: absolute;
@@ -46,7 +47,7 @@
       overflow: hidden;
     }
 
-    .modal-close::after{
+    .modal-close::after {
       content: "\00D7";
       position: absolute;
       top: 0.1em;
@@ -59,9 +60,9 @@
     .modal-is-open {
       display: block;
     }
-
   </style>
 </head>
+
 <body>
   <a href="#modal-window" id="open-modal">Open Modal</a>
   <div id="modal-window" class="modal-window">
@@ -76,13 +77,14 @@
     let openModal = document.getElementById("open-modal");
     let closeModal = document.getElementById("close-modal");
 
-    openModal.onclick = function(){
+    openModal.onclick = function () {
       modalWindow.classList.add("modal-is-open");
     };
 
-    closeModal.onclick = function(){
+    closeModal.onclick = function () {
       modalWindow.classList.remove("modal-is-open");
     }
   </script>
 </body>
+
 </html>
