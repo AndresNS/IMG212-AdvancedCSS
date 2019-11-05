@@ -1,0 +1,27 @@
+.nav {
+    background-color: #000;
+    padding: .5em 1em;
+    position: relative;
+
+    .nav__burger {
+        background-color: #fff;
+        padding: .25em;
+        width: 3em;
+        height: 3em;
+        position: absolute;
+        right: .5em;
+        top: .5em;
+    }
+
+    .nav__menu {
+        display: flex;
+        width: 90%;
+        li {
+            flex: 1;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}

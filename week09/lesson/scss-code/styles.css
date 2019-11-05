@@ -1,0 +1,88 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.message {
+  padding: 0.8em 1.2em;
+  border-radius: 0.2em;
+  border: 1px solid #2f5926;
+  color: #2f5926;
+  background-color: #e0f0f2;
+}
+.message--success {
+  color: #cfe8c9;
+  border-color: #cfe8c9;
+  background-color: #2f5926;
+}
+.message--warning {
+  color: #594826;
+  border-color: #594826;
+  background-color: #e8dec9;
+}
+.message--error {
+  color: #a92323;
+  border-color: #a92323;
+  background-color: #e8dec9;
+}
+
+.button {
+  padding: 0.5em 0.8em;
+  border: 1px solid #2f5926;
+  border-radius: 0.2em;
+  background-color: transparent;
+  font-size: 1rem;
+}
+.button--success {
+  border-color: #cfe8c9;
+  color: #fff;
+  background-color: #2f5926;
+}
+.button--danger {
+  border-color: #a92323;
+  color: #fff;
+  background-color: #a92323;
+}
+.button--large {
+  font-size: 1.2rem;
+}
+.button--small {
+  font-size: 0.8rem;
+}
+
+.nav {
+  background-color: #000;
+  padding: .5em 1em;
+  position: relative;
+}
+.nav .nav__burger {
+  background-color: #fff;
+  padding: .25em;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: .5em;
+  top: .5em;
+}
+.nav .nav__menu {
+  display: flex;
+  width: 90%;
+}
+.nav .nav__menu li {
+  flex: 1;
+}
+.nav .nav__menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

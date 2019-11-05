@@ -1,0 +1,25 @@
+.message {
+	padding: 0.8em 1.2em;
+	border-radius: 0.2em;
+	border: 1px solid $dark-green;
+	color: $dark-green;
+	background-color: $off-white;
+	
+	&--success { //& append class to the parent
+		color: $light-green;
+		border-color: $light-green;
+		background-color: $dark-green;
+	}
+
+	&--warning {
+		color: $warning-red;
+		border-color: $warning-red;
+		background-color: $light-brown;
+	}
+
+	&--error {
+		color: $error-red;
+		border-color: $error-red;
+		background-color: $light-brown;
+	}
+}
