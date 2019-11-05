@@ -1,0 +1,103 @@
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/* Ensure images do not scale larger than their container */
+img {
+    max-width: 100%;
+}
+
+.bg-dark {
+    /* I used !important to override the "!important" in the bootstrap style*/
+    background-color: orange !important; 
+    color: white;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(img/burger.png);
+}
+
+.jumbotron {
+    /* Hero */
+    padding: 7em 0 4em 0;
+    background-image: url(img/hero-fruit-sm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron > .container-fluid > p {
+    color: #fff;
+}
+
+.jumbotron > .container-fluid > .display-3 {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+.btn-primary:hover {
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: orange;
+    border-color: orange;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: yellow;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    :root {
+        font-size: 1.2rem;
+    }
+
+    .jumbotron {
+        background-image: url(img/hero-fruit-sm.jpg);
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        font-size: 1.3rem;
+    }
+
+    .jumbotron {
+        background-image: url(img/hero-fruit-md.jpg);
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    :root {
+        font-size: 1.4rem;
+    }
+
+    .jumbotron {
+        background-image: url(img/hero-fruit-lg.jpg);
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .jumbotron {
+        background-image: url(img/hero-fruit-xl.jpg);
+    }
+}
