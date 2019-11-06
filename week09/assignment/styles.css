@@ -59,18 +59,7 @@ body * + * {
   gap: 1em;
   margin-left: 1em;
   margin-right: 1em;
-}
-.grid--col-1 {
   grid-template-columns: 1fr;
-}
-.grid--col-2 {
-  grid-template-columns: 1fr 1fr;
-}
-.grid--col-3 {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.grid--col-4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid .grid__cell {
   margin-top: 0;
@@ -79,16 +68,26 @@ body * + * {
 .grid .grid__cell--span-1 {
   grid-column: span 1;
 }
-.grid .grid__cell--span-2 {
+.grid .grid__cell--span-1--span-2 {
   grid-column: span 2;
 }
-.grid .grid__cell--span-3 {
+.grid .grid__cell--span-1--span-3 {
   grid-column: span 3;
 }
-.grid .grid__cell--span-4 {
+.grid .grid__cell--span-1--span-4 {
   grid-column: span 4;
 }
 
+@media (min-width: 35em) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 50em) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .button {
   padding: 0.5em 0.8em;
   border: 1px solid #265559;
