@@ -1,7 +1,8 @@
 .title {
-    padding: 2em;
+    padding: $lg-padding + $sm-padding;
     text-align: center;
     font-size: 1.5rem;
+    color: #fff;
     
     &--background {
         background-color: $main;

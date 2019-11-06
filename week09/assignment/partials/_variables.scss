@@ -1,11 +1,21 @@
 //Colors
-$main: lightblue;
+$main: #27737a;
 $light: #f2f2f2;
-$dark: #333;
-$gray: #ddd;
+$dark: #333333;
+$gray: #bebcbc;
 $light-gray: #e2e2e2;
-$dark-teal: #265559;
 $green: #009900;
 $light-green: #5ab411;
 $red-danger: #be1515;
 $light-red: #e93131;
+
+//spacing
+$xs-padding: 0.5em;
+$sm-padding: 0.8em;
+$md-padding: 1em;
+$lg-padding: 2em;
+
+$xs-margin: 0.5em;
+$sm-margin: 1em;
+$md-margin: 1.4em;
+$lg-margin: 2.5em;

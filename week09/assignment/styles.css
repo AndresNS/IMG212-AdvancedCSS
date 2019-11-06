@@ -16,16 +16,17 @@ body {
 }
 
 body * + * {
-  margin-top: 1.5em;
+  margin-top: 1.9em;
 }
 
 .title {
-  padding: 2em;
+  padding: 2.8em;
   text-align: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 .title--background {
-  background-color: lightblue;
+  background-color: #27737a;
 }
 .title--small {
   font-size: 1.2rem;
@@ -36,7 +37,7 @@ body * + * {
 
 .navigation {
   margin-top: 0;
-  background-color: #333;
+  background-color: #333333;
   display: flex;
   flex-wrap: wrap;
   padding: 0 1em;
@@ -50,7 +51,7 @@ body * + * {
 }
 
 .navigation > a:hover {
-  background-color: #ddd;
+  background-color: #bebcbc;
   color: black;
 }
 
@@ -90,14 +91,14 @@ body * + * {
 }
 .button {
   padding: 0.5em 0.8em;
-  border: 1px solid #265559;
+  border: 1px solid #27737a;
   border-radius: 0.2em;
   background-color: transparent;
   font-size: 1rem;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #265559;
+  background-color: #27737a;
   color: #fff;
 }
 .button--success {

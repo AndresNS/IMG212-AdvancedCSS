@@ -1,8 +1,8 @@
 .card {
-    margin-top:     0;
+    margin-top: 0;
     background: #fff;
     font-size: 1.2rem;
-    padding: 1em;
+    padding: $md-padding;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
 
     .card__title {

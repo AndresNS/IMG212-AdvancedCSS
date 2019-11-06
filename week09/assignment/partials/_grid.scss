@@ -1,8 +1,12 @@
+/*
+The assignment says "create a _grid.scss partial for row and column modules", but I decided to use a cell instead row and columns, because I think it makes more sense if I'm using grid.
+*/
+
 .grid {
     display: grid;
-    gap: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    gap: $sm-margin;
+    margin-left: $sm-margin;
+    margin-right: $sm-margin;
     grid-template-columns: 1fr; //small devices
 
     .grid__cell {
