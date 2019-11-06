@@ -1,0 +1,86 @@
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #e2e2e2;
+}
+
+.header {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.title--background {
+  background-color: lightblue;
+}
+
+.title--small {
+  font-size: 1.2rem;
+}
+
+.title-large {
+  font-size: 3rem;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.card {
+  background: #fff;
+  font-size: 1.2rem;
+  padding: 1em;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  padding: 0.5em 0.8em;
+  border: 1px solid #265559;
+  border-radius: 0.2em;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*# sourceMappingURL=styles.css.map */
