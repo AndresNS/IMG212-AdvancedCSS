@@ -1,10 +1,11 @@
-:root {
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-*,
-::before,
-::after {
-    box-sizing: inherit;
-}
+//Colors
+$main: lightblue;
+$light: #f2f2f2;
+$dark: #333;
+$gray: #ddd;
+$light-gray: #e2e2e2;
+$dark-teal: #265559;
+$green: #009900;
+$light-green: #5ab411;
+$red-danger: #be1515;
+$light-red: #e93131;

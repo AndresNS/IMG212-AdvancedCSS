@@ -1,0 +1,17 @@
+.title {
+    padding: 2em;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    &--background {
+        background-color: $main;
+    }
+    
+    &--small {
+        font-size: 1.2rem;
+    }
+    
+    &-large {
+        font-size: 3rem;
+    }
+}

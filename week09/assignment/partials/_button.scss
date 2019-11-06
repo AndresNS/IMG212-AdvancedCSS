@@ -1,0 +1,40 @@
+.button {
+    padding: 0.5em 0.8em;
+    border: 1px solid $dark-teal;
+    border-radius: 0.2em;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $dark-teal;
+        color: #fff;
+    }
+
+    &--success {
+        border-color: $green;
+        background-color: $green;
+        color: #fff;
+        &:hover {
+            background-color: $light-green;
+        }
+    }
+
+    &--danger {
+        border-color: $red-danger;
+        background-color: $red-danger;
+        color: #fff;
+        &:hover {
+            background-color: $light-red;
+        }
+    }
+
+	&--large {
+		font-size: 1.2rem;;	
+	}
+
+	&--small {
+		font-size: 0.8rem;;	
+	}
+    
+}

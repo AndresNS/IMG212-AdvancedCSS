@@ -1,0 +1,49 @@
+.grid {
+    display: grid;
+    gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+
+    &--col-1 {
+        grid-template-columns: 1fr;
+    }
+
+    &--col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &--col-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &--col-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .grid__cell {
+        margin-top: 0;
+        grid-row: span 1;
+
+        &--span-1 {
+            grid-column: span 1;
+        }
+
+        &--span-2 {
+            grid-column: span 2;
+        }
+
+        &--span-3 {
+            grid-column: span 3;
+        }
+
+        &--span-4 {
+            grid-column: span 4;
+        }
+    }
+}
+
+// @media (min-width: 50em) {
+//     :root {
+//         font-size: 1.125em;
+//     }
+// }

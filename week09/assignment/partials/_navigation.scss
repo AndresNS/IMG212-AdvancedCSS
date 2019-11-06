@@ -1,0 +1,19 @@
+.navigation {
+    margin-top: 0;
+    background-color: $dark;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+}
+
+.navigation > a {
+    margin-top: 0;
+    color: $light;
+    padding: .8em 1em;
+    text-decoration: none;
+}
+
+.navigation > a:hover {
+    background-color: $gray;
+    color: black;
+}
