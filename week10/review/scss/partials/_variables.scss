@@ -1,0 +1,28 @@
+$linkPrimary: #1476b8;
+$linkVisited: #1430b8;
+$linkActive: #b81414;
+
+$darkGrey:#333333;
+$lightGrey: #888888;
+$lighterGrey: #cccccc;
+
+
+$white: #fefefe;
+$black: #020202;
+
+//Font
+$font-family-base: Helvetica, Arial, sans-serif;
+$font-family-serif: "Times New Roman", Times, serif;
+
+
+//Font Sizes
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.4;
+
+$h1-font-size-base: $font-size-base * 1.5;
+$h1-font-size-lg: $font-size-base * 2.25;
+
+//Spacing
+$grid-margin: 0.75em;

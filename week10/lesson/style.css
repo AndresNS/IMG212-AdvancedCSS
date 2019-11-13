@@ -1,0 +1,111 @@
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+}
+.avatar--circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+.my-module {
+  padding: 5em;
+}
+
+.page-header {
+  color: #63a35c;
+  font-weight: 700;
+  background-color: #82b57d;
+  background-color: #778a76;
+  background-color: #4fbd43;
+}
+.page-header .dark {
+  background-color: #3b6237;
+}
+@media (min-width: 1200) {
+  .page-header .purple {
+    background-color: #9c5ca3;
+  }
+}
+.page-header--transparent {
+  opacity: rgba(99, 163, 92, 0.5);
+}
+
+.icon-size {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-size {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.icon-size {
+  font-size: 80px;
+  height: 80px;
+  width: 80px;
+}
+
+ul:nth-child(3n+1) {
+  background-color: #004f9e;
+}
+
+ul:nth-child(3n+2) {
+  background-color: #0052a3;
+}
+
+ul:nth-child(3n+3) {
+  background-color: #0054a8;
+}
+
+ul:nth-child(3n+4) {
+  background-color: #0057ad;
+}
+
+ul:nth-child(3n+5) {
+  background-color: #0059b3;
+}
+
+ul:nth-child(3n+6) {
+  background-color: #005cb8;
+}
+
+ul:nth-child(3n+7) {
+  background-color: #005ebd;
+}
+
+ul:nth-child(3n+8) {
+  background-color: #0061c2;
+}
+
+ul:nth-child(3n+9) {
+  background-color: #0063c7;
+}
+
+ul:nth-child(3n+10) {
+  background-color: #0066cc;
+}
+
+/*# sourceMappingURL=style.css.map */

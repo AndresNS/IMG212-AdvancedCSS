@@ -1,0 +1,39 @@
+
+/*
+* Header section
+*/
+.page-header {
+    padding: 0.4em 1em;
+    background-color: #fff;
+}
+
+@media (min-width: 35em) {
+    .page-header {
+        padding: 1em;
+    }
+}
+
+@media (min-width: 50em) {
+    .page-header {
+        padding: 1em 4em;
+    }
+}
+
+.title>h1 {
+    color: $darkGrey;
+    text-transform: uppercase;
+    font-size: $h1-font-size-base;
+    margin: .2em 0;
+}
+
+@media (min-width: 35em) {
+    .title>h1 {
+        font-size: $h1-font-size-lg;
+    }
+}
+
+.slogan {
+    color: $lightGrey;
+    font-size: $font-size-sm;
+    margin: 0;
+}

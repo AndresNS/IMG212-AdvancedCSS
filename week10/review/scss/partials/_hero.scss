@@ -1,0 +1,27 @@
+/*
+* Hero image
+*/
+.hero {
+    padding: 2em 1em;
+    text-align: center;
+    background-image: url(../build/coffee-beans-small.jpg);
+    background-size: 100%;
+    color: #fff;
+    text-shadow: 0.1em 0.1em 0.3em $black;
+}
+
+@media (min-width: 35em) {
+    .hero {
+        padding: 5em 3em;
+        font-size: $font-size-md;
+        background-image: url(../build/coffee-beans-medium.jpg);
+    }
+}
+
+@media (min-width: 50em) {
+    .hero {
+        padding: 7em 6em;
+        font-size: $font-size-lg;
+        background-image: url(../build/coffee-beans.jpg);
+    }
+}
