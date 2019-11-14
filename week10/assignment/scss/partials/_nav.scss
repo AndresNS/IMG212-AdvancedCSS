@@ -1,0 +1,49 @@
+/**
+     * Nav menu
+     */
+.nav-menu {
+  margin: 0;
+  padding-left: 0;
+  border: 1px solid $lighterGrey;
+  list-style: none;
+  background-color: $black;
+  color: $white;
+
+  > li + li {
+    border-top: 1px solid $lighterGrey;
+  }
+
+  > li > a {
+    display: block;
+    padding: 0.8em 1em;
+    color: $white;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 35em) {
+  .nav-menu {
+    display: flex;
+    position: static;
+    border: 0;
+    padding: 0 1em;
+
+    > li {
+      flex: 1;
+    }
+    > li + li {
+      border: 0;
+    }
+
+    > li > a {
+      padding: 0.3em;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 50em) {
+  .nav-menu {
+    padding: 0 4em;
+  }
+}

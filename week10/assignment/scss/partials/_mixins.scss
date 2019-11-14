@@ -1,0 +1,5 @@
+@mixin hero-base($padding, $font-size, $bg-image) {
+    padding: $padding;
+    font-size: $font-size;
+    background-image: url($bg-image);
+}

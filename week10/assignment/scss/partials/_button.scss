@@ -1,0 +1,19 @@
+.button {
+    @extend %button-base;
+    background-color: $linkPrimary;
+    color: $white;
+
+    &:hover {
+        background-color: lighten($linkPrimary, 10%);
+    }
+
+    &--danger {
+        @extend %button-base;
+        background-color: $redDanger;
+        color: $white;
+
+        &:hover {
+            background-color: lighten($redDanger, 10%);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+
+/*
+     * Hero image
+     */
+.hero {
+	@include hero-base(2em 1em, inherit, "coffee-beans-small.jpg");
+	text-align: center;
+	background-size: 100%;
+	color: #fff;
+	text-shadow: 0.1em 0.1em 0.3em $black;
+}
+
+@media (min-width: 35em) {
+	.hero {
+		@include hero-base(5em 3em, 1rem * 1.2, "coffee-beans-medium.jpg");
+	}
+}
+
+@media (min-width: 50em) {
+	.hero {
+		@include hero-base(7em 6em, 1rem * 1.4, "coffee-beans.jpg");
+	}
+}

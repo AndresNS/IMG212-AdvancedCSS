@@ -1,0 +1,65 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+
+@media (min-width: 50em) {
+  :root {
+    font-size: $font-size-base;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*
+     * Links
+     */
+a:link {
+  color: $linkPrimary;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  color: $linkVisited;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: $linkActive;
+}
+
+/*
+     * Main section
+     */
+main {
+  padding: 1em;
+}
+
+@media (min-width: 35em) {
+  main {
+    padding: 2em 1em;
+  }
+}
+
+@media (min-width: 50em) {
+  main {
+    padding: 2em 4em;
+  }
+}
+
+.subtitle {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}

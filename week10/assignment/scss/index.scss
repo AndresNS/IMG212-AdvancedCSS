@@ -1,0 +1,15 @@
+//Variables
+@import 'partials/variables';
+@import "partials/mixins";
+@import "partials/placeholders";
+
+//Base styles
+@import 'partials/base';
+@import 'partials/grid';
+
+//Components
+@import 'partials/header';
+@import 'partials/hero';
+@import 'partials/nav';
+@import 'partials/menu';
+@import 'partials/button';

@@ -1,0 +1,16 @@
+/**
+     * Main columns
+     */
+@media (min-width: 35em) {
+  .row {
+    display: flex;
+    margin-left: -$grid-margin;
+    margin-right: -$grid-margin;
+  }
+
+  .column {
+    flex: 1;
+    margin-right: $grid-margin;
+    margin-left: $grid-margin;
+  }
+}
