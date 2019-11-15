@@ -1,5 +1,3 @@
-
-
 /*
      * Hero image
      */
@@ -13,12 +11,12 @@
 
 @media (min-width: 35em) {
 	.hero {
-		@include hero-base(5em 3em, 1rem * 1.2, "coffee-beans-medium.jpg");
+		@include hero-base(5em 3em, resize-func($font-size-base, "md"), "coffee-beans-medium.jpg");
 	}
 }
 
 @media (min-width: 50em) {
 	.hero {
-		@include hero-base(7em 6em, 1rem * 1.4, "coffee-beans.jpg");
+		@include hero-base(7em 6em, resize-func($font-size-base, "lg"), "coffee-beans.jpg");
 	}
 }

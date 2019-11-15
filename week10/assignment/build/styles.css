@@ -171,6 +171,18 @@ main {
   color: #fefefe;
   font-weight: normal;
 }
+.nav-menu .about:hover {
+  background-color: #1424b8;
+}
+.nav-menu .shop:hover {
+  background-color: #5614b8;
+}
+.nav-menu .menu:hover {
+  background-color: #a814b8;
+}
+.nav-menu .brew:hover {
+  background-color: #b81476;
+}
 
 @media (min-width: 35em) {
   .nav-menu {

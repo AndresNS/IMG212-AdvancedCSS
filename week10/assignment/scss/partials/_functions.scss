@@ -1,0 +1,11 @@
+//used in hero partial
+
+@function resize-func($baseSize, $screenSize){
+    @if $screenSize == "sm" {
+        @return $baseSize * 0.875;
+    } @else if $screenSize == "md" {
+        @return $baseSize * 1.2;
+    } @else if $screenSize == "lg" {
+        @return $baseSize * 1.4;
+    }
+}

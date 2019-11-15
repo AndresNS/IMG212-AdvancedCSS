@@ -2,48 +2,58 @@
      * Nav menu
      */
 .nav-menu {
-  margin: 0;
-  padding-left: 0;
-  border: 1px solid $lighterGrey;
-  list-style: none;
-  background-color: $black;
-  color: $white;
+	margin: 0;
+	padding-left: 0;
+	border: 1px solid $lighterGrey;
+	list-style: none;
+	background-color: $black;
+	color: $white;
 
-  > li + li {
-    border-top: 1px solid $lighterGrey;
-  }
+	>li+li {
+		border-top: 1px solid $lighterGrey;
+	}
 
-  > li > a {
-    display: block;
-    padding: 0.8em 1em;
-    color: $white;
-    font-weight: normal;
-  }
+	>li>a {
+		display: block;
+		padding: 0.8em 1em;
+		color: $white;
+		font-weight: normal;
+	}
+	
+	$menu-items: "about", "shop", "menu", "brew";
+	
+	@for $i from 1 through length($menu-items) {
+		.#{nth($menu-items,$i)}:hover {
+			background-color: adjust-hue($color: $linkPrimary, $degrees: $i * 30deg);
+		}
+	}
 }
 
+
 @media (min-width: 35em) {
-  .nav-menu {
-    display: flex;
-    position: static;
-    border: 0;
-    padding: 0 1em;
+	.nav-menu {
+		display: flex;
+		position: static;
+		border: 0;
+		padding: 0 1em;
 
-    > li {
-      flex: 1;
-    }
-    > li + li {
-      border: 0;
-    }
+		>li {
+			flex: 1;
+		}
 
-    > li > a {
-      padding: 0.3em;
-      text-align: center;
-    }
-  }
+		>li+li {
+			border: 0;
+		}
+
+		>li>a {
+			padding: 0.3em;
+			text-align: center;
+		}
+	}
 }
 
 @media (min-width: 50em) {
-  .nav-menu {
-    padding: 0 4em;
-  }
+	.nav-menu {
+		padding: 0 4em;
+	}
 }
