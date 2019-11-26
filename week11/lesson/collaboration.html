@@ -1,0 +1,94 @@
+<!doctype html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Sansita&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</style>
+</head>
+
+<body>
+	<nav class="nav-container">
+		<div class="nav-container__inner">
+			<a class="home-link" href="/">Ink</a>
+			<ul class="top-nav">
+				<li><a href="/features">Features</a></li>
+				<li><a href="/pricing">Pricing</a></li>
+				<li><a href="/support">Support</a></li>
+				<li class="dropdown" aria-haspopup="true">
+					<button class="dropdown__toggle">Menu</button>
+					<div class="dropdown__drawer">
+						<ul class="menu" role="menu">
+							<li role="menuitem">
+								<a href="/features">Features</a>
+							</li>
+							<li role="menuitem">
+								<a href="/pricing">Pricing</a>
+							</li>
+							<li role="menuitem">
+								<a href="/support">Support</a>
+							</li>
+							<li role="menuitem">
+								<a href="/about">About</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="top-nav__featured"><a href="/login">Login</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="hero">
+		<div class="hero__inner">
+			<h2>Team collaboration done right</h2>
+			<a href="/sign-up" class="button button--cta">Get started</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="tile-row">
+			<div class="tile">
+				<h4>Work together, even if you're apart</h4>
+				<p>Organize your team conversations into threads. Collaborate together on documents in real-time. Use
+					face-to-face <a href="/features/video-calling">video calls</a> when typing just won't do.</p>
+				<a href="/collaboration" class="button">Read more</a>
+			</div>
+
+			<div class="tile">
+				<h4>Take it with you</h4>
+				<p>Ink is available on a wide array of devices, so you can work from anywhere:</p>
+				<ul class="tag-list">
+					<li>Web</li>
+					<li>iOS</li>
+					<li>Android</li>
+					<li>Windows Phone</li>
+				</ul>
+				<a href="/supported-devices" class="button">Read more</a>
+			</div>
+
+			<div class="tile">
+				<h4>Priced right</h4>
+				<p>Whether you work on a team of three or a three hundred, you'll find our tiered pricing reasonable at
+					every
+					level.</p>
+				<a href="/pricing" class="button">Read more</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<div class="page-footer__inner">
+			Copyright &copy; 2017 Ink, Inc.
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		(function () {
+			var toggle = document.getElementsByClassName('dropdown__toggle')[0];
+			var dropdown = toggle.parentElement;
+			toggle.addEventListener('click', function (e) {
+				e.preventDefault();
+				dropdown.classList.toggle('is-open');
+			});
+		}());
+	</script>
+</body>
