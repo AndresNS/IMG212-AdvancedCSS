@@ -53,33 +53,44 @@ figure {
 }
 
 .header {
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-bottom: 4px solid #ea4b12;
 }
 
 .header__logo {
-  max-width: 40%;
-  padding: 0.5em 1.5em;
+  flex: 80%;
+  padding: 0.5em 2em;
+}
+.header__logo > img {
+  max-width: 50%;
 }
 
 .header__toggle {
+  flex: 20%;
   margin: 0.5em 0;
+  text-align: right;
 }
 .header__toggle > a {
-  padding: 1em;
+  padding-right: 2em;
 }
 .header__toggle > a > img {
   width: 1.6em;
 }
 
 .header__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  flex-basis: 100%;
   height: 0;
   overflow: hidden;
   margin-top: 0;
   transition: height 0.3s ease-out;
+  background-color: #000000;
 }
 
 .header.is-open .header__nav {
@@ -91,18 +102,24 @@ figure {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .menu__item {
-  margin: 0 0.5em;
-  padding: 0.8em 1em;
+  flex: 100%;
+  margin: 0;
 }
 .menu__item > a {
+  text-align: center;
+  display: block;
+  padding: 0.8em 1em;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+}
+.menu__item:last-child {
+  border-bottom: 4px solid #ea4b12;
 }
 
 .article {

@@ -3,17 +3,22 @@
     padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: center;  
 }
 
 .menu__item {
-    margin: 0 0.5em;
-    padding: 0.8em 1em;
-
+    flex: 100%;
+    margin: 0;
     >a {
+        text-align: center;
+        display: block;
+        padding: 0.8em 1em;
         text-decoration: none;
         color: $white;
         text-transform: uppercase;
+    }
+    &:last-child{
+        border-bottom: 4px solid $secondary-color;
     }
 }
