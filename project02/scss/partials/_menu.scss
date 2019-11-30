@@ -1,0 +1,19 @@
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__item {
+    margin: 0 0.5em;
+    padding: 0.8em 1em;
+
+    >a {
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+    }
+}

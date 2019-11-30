@@ -1,0 +1,39 @@
+.header {
+    background-color: $black;
+    border-bottom: 4px solid $secondary-color;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 40%;
+    padding: 0.5em 1.5em;
+}
+
+.header__toggle {
+    margin: 0.5em 0;
+
+    >a {
+        padding: 1em;
+
+        >img {
+            width: 1.6em;
+        }
+    }
+}
+
+.header__nav {
+    height: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: height 0.3s ease-out;
+}
+
+.header__wrapper.is-open .header__nav {
+    height: auto;
+}

@@ -1,0 +1,14 @@
+.article {
+
+}
+
+.article__title {
+    font-size: $title-size;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.article__body {
+    line-height: 1.7em;
+}
