@@ -8,11 +8,17 @@ $white: #ffffff;
 $black: #000000;
 
 
-//Fonts
+//Fonts Families
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 $font-family-base: Montserrat, Arial, sans-serif;
 
-
-$p-size: 1.3em;
+//Font sizes
+$p-size: 1.2em;
+$subtitle-size: 1.4em;
 $title-size: 2em;
+
+
+//Spacing
+$section-padding: 3em 0; 
+$p-line-height: 1.7em;

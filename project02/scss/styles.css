@@ -20,19 +20,18 @@ body * + * {
   margin-top: 2em;
 }
 
-h1 {
-  font-size: 2em;
-  text-align: center;
-}
-
 p {
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: #212121;
   text-align: justify;
 }
 
 img {
   max-width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 .width-80 {
@@ -106,14 +105,85 @@ img {
   text-transform: uppercase;
 }
 
+.article {
+  padding: 3em 0;
+}
+
 .article__title {
   font-size: 2em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: normal;
+  text-align: center;
 }
 
 .article__body {
+  line-height: 1.7em;
+}
+
+.color-selection__title {
+  background-color: #212121;
+  padding: 0.8em 0;
+}
+.color-selection__title > h2 {
+  font-size: 1.4em;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+.color-selection__body {
+  margin-top: 0;
+}
+
+.card {
+  margin-top: 0;
+}
+.card figure {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  position: relative;
+}
+
+.card__image {
+  opacity: 0.7;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.card__caption {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: 0.2em;
+}
+
+.media {
+  padding: 1em 0;
+}
+
+.media__body {
+  padding: 1em 0;
+}
+.media__body h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4em;
+}
+.media__body p {
   line-height: 1.7em;
 }
 

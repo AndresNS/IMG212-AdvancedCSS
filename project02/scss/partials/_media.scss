@@ -1,0 +1,18 @@
+.media {
+    padding: 1em 0;
+}
+
+.media__image {}
+
+.media__body {
+    padding: 1em 0;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $subtitle-size;
+    }
+
+    p {
+        line-height: $p-line-height;
+    }
+}

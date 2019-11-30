@@ -1,5 +1,5 @@
 .article {
-
+    padding: $section-padding;
 }
 
 .article__title {
@@ -7,8 +7,9 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-weight: normal;
+    text-align: center;
 }
 
 .article__body {
-    line-height: 1.7em;
+    line-height: $p-line-height;
 }

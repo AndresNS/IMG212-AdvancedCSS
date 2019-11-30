@@ -1,0 +1,33 @@
+.card {
+    margin-top: 0;
+    figure {
+        display: flex;
+        flex-direction: column;
+        background-color: $black;
+        position: relative;
+
+    }
+}
+
+.card__image {
+    opacity: 0.7;
+    object-fit: cover;flex-grow: 1;
+}
+
+.card__caption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 0;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+
+}

@@ -21,11 +21,6 @@ body * + * {
 }
 
 
-h1 {
-    font-size: 2em;
-    text-align: center;
-}
-
 p {
     font-size: $p-size;
     color: $dark-color;
@@ -34,6 +29,10 @@ p {
 
 img {
     max-width: 100%;
+}
+
+figure {
+    margin: 0;
 }
 
 .width-80 {
