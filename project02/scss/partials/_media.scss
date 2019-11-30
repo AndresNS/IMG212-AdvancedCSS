@@ -2,7 +2,12 @@
     padding: 1em 0;
 }
 
-.media__image {}
+.media__image{
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+}
 
 .media__body {
     padding: 1em 0;

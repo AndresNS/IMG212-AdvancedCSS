@@ -1,13 +1,9 @@
 .header {
-    background-color: $black;
-    border-bottom: 4px solid $secondary-color;
-}
-
-.header__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 4px solid $secondary-color;
 }
 
 .header__logo {
@@ -34,6 +30,6 @@
     transition: height 0.3s ease-out;
 }
 
-.header__wrapper.is-open .header__nav {
+.header.is-open .header__nav {
     height: auto;
 }
