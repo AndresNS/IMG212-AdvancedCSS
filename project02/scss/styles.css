@@ -192,6 +192,10 @@ figure {
   line-height: 1.7em;
 }
 
+footer.container-black {
+  margin-top: 0;
+}
+
 .footer {
   color: #ffffff;
   display: flex;
@@ -253,6 +257,42 @@ figure {
 }
 .footer__copyright p > a {
   color: #ffffff;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-auto-flow: dense;
+  background-color: #000;
+  margin-top: 4em;
+}
+.images-grid > .images-grid__item {
+  display: flex;
+}
+.images-grid img {
+  object-fit: cover;
+  max-width: 100%;
+  flex-grow: 1;
+}
+.images-grid .jace {
+  grid-column: span 2;
+  grid-row: 1/3;
+}
+.images-grid .iona {
+  grid-column: span 2;
+  grid-row: 1/2;
+}
+.images-grid .nicol-bolas {
+  grid-column: span 2;
+  grid-row: 2/4;
+}
+.images-grid .dryad {
+  grid-column: span 2;
+  grid-row: 3/6;
+}
+.images-grid .dragon {
+  grid-column: span 2;
+  grid-row: 4/6;
 }
 
 /*# sourceMappingURL=styles.css.map */
