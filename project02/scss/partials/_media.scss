@@ -11,6 +11,8 @@
 
 .media__body {
     padding: 1em 0;
+    width: 80%;
+    margin: 0 auto;
     h2 {
         text-transform: uppercase;
         text-align: center;
@@ -24,21 +26,24 @@
 
 @media (min-width: $md-screen){
     .media {
+        width: 80%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         &:nth-child(even) .media__image{
             float: right;
             margin-left: 2em;
-            margin-right: 10%;
         }
     }
     
     .media__image{
         width: 35%;
         float: left;
-        margin-left: 10%;
         margin-right: 2em;
     }
     
     .media__body {
+        width: 100%;
         margin-top: 0;
         padding: 0;
         h2 {

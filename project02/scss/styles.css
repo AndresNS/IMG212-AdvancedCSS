@@ -304,6 +304,8 @@ figure {
 
 .media__body {
   padding: 1em 0;
+  width: 80%;
+  margin: 0 auto;
 }
 .media__body h2 {
   text-transform: uppercase;
@@ -315,20 +317,25 @@ figure {
 }
 
 @media (min-width: 768px) {
+  .media {
+    width: 80%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .media:nth-child(even) .media__image {
     float: right;
     margin-left: 2em;
-    margin-right: 10%;
   }
 
   .media__image {
     width: 35%;
     float: left;
-    margin-left: 10%;
     margin-right: 2em;
   }
 
   .media__body {
+    width: 100%;
     margin-top: 0;
     padding: 0;
   }
