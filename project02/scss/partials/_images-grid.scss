@@ -30,6 +30,10 @@
         grid-row: 2 / 4;
     }
 
+    .official-web {
+        display: none;
+    }
+
     .dryad {
         grid-column: span 2;
         grid-row: 3 / 6;
@@ -38,5 +42,61 @@
     .dragon {
         grid-column: span 2;
         grid-row: 4 / 6;
+    }
+}
+
+@media (min-width: $lg-screen) {
+    .images-grid {
+
+        img {
+            opacity: 0.8;
+            transition: opacity .4s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .jace {
+            grid-column: span 4;
+            grid-row: 1 / 3;
+        }
+
+        .iona {
+            grid-column: span 4;
+            grid-row: 1 / 2;
+        }
+
+        .nicol-bolas {
+            grid-column: span 4;
+            grid-row: 1 / 4;
+        }
+
+        .official-web {
+            grid-column: span 4;
+            grid-row: 2 / 3;
+            margin-top: 0;
+            padding: 2em 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #fff;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: $subtitle-size;
+            font-weight: normal;
+            letter-spacing: 0.1em;
+        }
+
+        .dryad {
+            grid-column: span 3;
+            grid-row: 3 / 4;
+        }
+
+        .dragon {
+            grid-column: span 5;
+            grid-row: 3 / 4;
+        }
     }
 }
