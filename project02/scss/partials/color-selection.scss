@@ -14,3 +14,17 @@
 .color-selection__body{
     margin-top: 0;
 }
+
+@media (min-width: $md-screen){
+    .color-selection__body{
+        margin-top: 0;
+        display: flex;
+    }
+}
+
+@media (min-width: $lg-screen){
+    .color-selection__body{
+        margin-top: 0;
+        display: flex;
+    }
+}

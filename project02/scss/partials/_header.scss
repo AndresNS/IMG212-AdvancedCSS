@@ -10,7 +10,8 @@
 .header__logo {
     flex: 80%;
     padding: 0.5em 2em;
-    >img{
+
+    >img {
         max-width: 50%;
     }
 }
@@ -22,6 +23,7 @@
 
     >a {
         padding-right: 2em;
+
         >img {
             width: 1.6em;
         }
@@ -40,8 +42,28 @@
     background-color: $black;
 }
 
-.header.is-open .header__nav{
+.header.is-open .header__nav {
     height: auto;
-    
-    
+}
+
+@media (min-width: $md-screen) {
+    .header {
+    }
+
+    .header__logo {
+        flex-basis: 50%;
+        padding-left: 4em;
+    }
+
+    .header__toggle{
+        display: none;
+    }
+
+    .header__nav {
+        position: initial;
+        flex: 50%;
+        height: auto;
+        margin-top: 0;
+        padding-right: 4em;
+    }
 }

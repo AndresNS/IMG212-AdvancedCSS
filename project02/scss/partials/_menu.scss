@@ -22,3 +22,23 @@
         border-bottom: 4px solid $secondary-color;
     }
 }
+
+@media (min-width: $md-screen) {
+    .menu {
+        display: flex; 
+        justify-content: flex-end;
+    }
+
+    .menu__item {
+        flex: initial;
+        >a:hover {
+            margin-top: 2px;
+            border-bottom: 2px solid $secondary-color;
+        }
+
+        &:last-child{
+            border-bottom: none;
+            margin-right: -1em;
+        }
+    }
+}

@@ -1,17 +1,17 @@
 .card {
     margin-top: 0;
+
     figure {
         display: flex;
-        flex-direction: column;
         background-color: $black;
         position: relative;
-
     }
 }
 
 .card__image {
     opacity: 0.7;
-    object-fit: cover;flex-grow: 1;
+    object-fit: cover;
+    flex-grow: 1;
 }
 
 .card__caption {
@@ -29,5 +29,67 @@
     font-weight: bold;
     font-size: 3em;
     letter-spacing: 0.2em;
+}
 
+@media (min-width: $md-screen) {
+    .card {
+        display: flex;
+        flex: 1;
+        > a{
+            display: flex;
+        }
+    
+        figure {
+            position: initial;
+            flex-direction: column;
+        }
+        &:nth-child(odd) .card__caption{
+            background-color: $dark-color;
+        }
+    }
+    
+    .card__image {
+        opacity: 1;
+    }
+    
+    .card__caption {
+        position: initial;
+        padding: 0.7em 0;
+        font-weight: normal;
+        font-size: 0.9em;
+    }
+}
+
+
+@media (min-width: $lg-screen) {
+    .card {
+        >a {
+            &:hover .card__image{
+                opacity: 0.6;
+            }
+            &:hover .card__caption{
+                opacity: 1;
+            }
+        }
+        figure {
+            position: relative;
+        }
+        &:nth-child(odd) .card__caption{
+            background-color: transparent;
+        }
+    }
+
+
+    .card__image {
+        opacity: 1;
+        transition: opacity 0.35s ease-out;
+    }
+    
+    .card__caption {
+        position: absolute;
+        font-size: 2.3em;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.35s ease-out;
+    }
 }

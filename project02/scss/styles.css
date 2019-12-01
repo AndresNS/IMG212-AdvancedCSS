@@ -97,6 +97,24 @@ figure {
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .header__logo {
+    flex-basis: 50%;
+    padding-left: 4em;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__nav {
+    position: initial;
+    flex: 50%;
+    height: auto;
+    margin-top: 0;
+    padding-right: 4em;
+  }
+}
 .menu {
   margin: 0;
   padding: 0;
@@ -122,6 +140,24 @@ figure {
   border-bottom: 4px solid #ea4b12;
 }
 
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu__item {
+    flex: initial;
+  }
+  .menu__item > a:hover {
+    margin-top: 2px;
+    border-bottom: 2px solid #ea4b12;
+  }
+  .menu__item:last-child {
+    border-bottom: none;
+    margin-right: -1em;
+  }
+}
 .article {
   padding: 3em 0;
 }
@@ -155,12 +191,23 @@ figure {
   margin-top: 0;
 }
 
+@media (min-width: 768px) {
+  .color-selection__body {
+    margin-top: 0;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .color-selection__body {
+    margin-top: 0;
+    display: flex;
+  }
+}
 .card {
   margin-top: 0;
 }
 .card figure {
   display: flex;
-  flex-direction: column;
   background-color: #000000;
   position: relative;
 }
@@ -188,6 +235,60 @@ figure {
   letter-spacing: 0.2em;
 }
 
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex: 1;
+  }
+  .card > a {
+    display: flex;
+  }
+  .card figure {
+    position: initial;
+    flex-direction: column;
+  }
+  .card:nth-child(odd) .card__caption {
+    background-color: #212121;
+  }
+
+  .card__image {
+    opacity: 1;
+  }
+
+  .card__caption {
+    position: initial;
+    padding: 0.7em 0;
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+}
+@media (min-width: 1024px) {
+  .card > a:hover .card__image {
+    opacity: 0.6;
+  }
+  .card > a:hover .card__caption {
+    opacity: 1;
+  }
+  .card figure {
+    position: relative;
+  }
+  .card:nth-child(odd) .card__caption {
+    background-color: transparent;
+  }
+
+  .card__image {
+    opacity: 1;
+    transition: opacity 0.35s ease-out;
+  }
+
+  .card__caption {
+    position: absolute;
+    font-size: 2.3em;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.35s ease-out;
+  }
+}
 .media {
   padding: 1em 0;
 }
