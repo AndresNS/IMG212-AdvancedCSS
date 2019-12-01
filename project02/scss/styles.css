@@ -310,6 +310,29 @@ figure {
   line-height: 1.7em;
 }
 
+@media (min-width: 768px) {
+  .media:nth-child(even) .media__image {
+    float: right;
+    margin-left: 2em;
+    margin-right: 10%;
+  }
+
+  .media__image {
+    width: 35%;
+    float: left;
+    margin-left: 10%;
+    margin-right: 2em;
+  }
+
+  .media__body {
+    margin-top: 0;
+    padding: 0;
+  }
+  .media__body h2 {
+    margin-top: 0;
+    text-align: left;
+  }
+}
 footer.container-black {
   margin-top: 0;
 }
