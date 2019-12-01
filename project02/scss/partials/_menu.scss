@@ -34,6 +34,7 @@
         >a:hover {
             margin-top: 2px;
             border-bottom: 2px solid $secondary-color;
+            animation: lift 0.5s ease-out 1;
         }
 
         &:last-child{

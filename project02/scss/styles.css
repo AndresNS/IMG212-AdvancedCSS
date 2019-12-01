@@ -152,6 +152,7 @@ figure {
   .menu__item > a:hover {
     margin-top: 2px;
     border-bottom: 2px solid #ea4b12;
+    animation: lift 0.5s ease-out 1;
   }
   .menu__item:last-child {
     border-bottom: none;
@@ -576,6 +577,17 @@ footer.container-black {
   .images-grid .dragon {
     grid-column: span 5;
     grid-row: 3/4;
+  }
+}
+@keyframes lift {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
