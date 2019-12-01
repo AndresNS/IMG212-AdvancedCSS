@@ -16,6 +16,11 @@
 }
 
 @media (min-width: $md-screen){
+    .color-selection__title {
+        >h2{
+            font-size: $p-size;
+        }
+    }
     .color-selection__body{
         margin-top: 0;
         display: flex;

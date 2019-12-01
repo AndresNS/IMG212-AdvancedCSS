@@ -192,6 +192,10 @@ figure {
 }
 
 @media (min-width: 768px) {
+  .color-selection__title > h2 {
+    font-size: 1.2em;
+  }
+
   .color-selection__body {
     margin-top: 0;
     display: flex;
