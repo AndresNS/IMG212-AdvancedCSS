@@ -46,12 +46,10 @@
     height: auto;
 }
 
-@media (min-width: $md-screen) {
-    .header {
-    }
+@media (min-width: $lg-screen) {
 
     .header__logo {
-        flex-basis: 50%;
+        flex-basis: 40%;
         padding-left: 4em;
     }
 
@@ -61,7 +59,7 @@
 
     .header__nav {
         position: initial;
-        flex: 50%;
+        flex: 60%;
         height: auto;
         margin-top: 0;
         padding-right: 4em;

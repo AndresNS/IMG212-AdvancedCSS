@@ -97,9 +97,9 @@ figure {
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .header__logo {
-    flex-basis: 50%;
+    flex-basis: 40%;
     padding-left: 4em;
   }
 
@@ -109,7 +109,7 @@ figure {
 
   .header__nav {
     position: initial;
-    flex: 50%;
+    flex: 60%;
     height: auto;
     margin-top: 0;
     padding-right: 4em;
@@ -140,7 +140,7 @@ figure {
   border-bottom: 4px solid #ea4b12;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .menu {
     display: flex;
     justify-content: flex-end;
@@ -400,6 +400,89 @@ footer.container-black {
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: initial;
+  }
+
+  .footer__social {
+    order: 1;
+    flex: 50%;
+  }
+  .footer__social .social {
+    margin: 5em auto;
+  }
+
+  .footer__links {
+    order: 0;
+    flex: 50%;
+    margin: 0;
+  }
+
+  .footer__copyright {
+    order: 2;
+    flex: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    flex-wrap: nowrap;
+  }
+  .footer > * + * {
+    margin: 0;
+  }
+
+  .footer__social {
+    order: 2;
+    flex: 35%;
+  }
+  .footer__social > h3 {
+    text-align: left;
+  }
+  .footer__social > .divider {
+    margin: 0;
+  }
+  .footer__social .social {
+    justify-content: flex-start;
+  }
+  .footer__social .social .social__item {
+    margin: 0 1.5em;
+  }
+  .footer__social .social .social__item:first-child {
+    margin-left: 0;
+  }
+
+  .footer__links {
+    order: 1;
+    flex: 25%;
+  }
+  .footer__links > h3 {
+    text-align: left;
+  }
+  .footer__links > .divider {
+    margin: 0;
+  }
+  .footer__links > ul {
+    text-align: left;
+  }
+
+  .footer__copyright {
+    order: 0;
+    flex: 40%;
+    padding-right: 2em;
+  }
+  .footer__copyright > h3 {
+    text-align: left;
+  }
+  .footer__copyright > .divider {
+    margin: 0;
+  }
+  .footer__copyright p {
+    text-align: left;
+  }
+}
 .images-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
