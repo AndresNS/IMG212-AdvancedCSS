@@ -15,8 +15,8 @@ $font-family-base: Montserrat, Arial, sans-serif;
 
 //Font sizes
 $p-size: 1.2em;
-$subtitle-size: 1.4em;
-$title-size: 2em;
+$subtitle-size: $p-size * 1.1;
+$title-size: $p-size * 1.6;
 
 
 //Spacing
