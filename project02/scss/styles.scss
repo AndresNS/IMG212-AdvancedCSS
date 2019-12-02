@@ -1,5 +1,7 @@
-//Variables
+//Variables and resources
 @import "partials/variables";
+@import "partials/animations";
+@import "partials/mixins";
 
 //Base styles
 @import "partials/base";
@@ -13,6 +15,3 @@
 @import "partials/media";
 @import "partials/footer";
 @import "partials/images-grid";
-
-//Animations
-@import "partials/animations";

@@ -1,0 +1,5 @@
+@mixin grid-values($column, $row) {
+    grid-column: unquote($column);
+    grid-row: unquote($row);
+
+}
