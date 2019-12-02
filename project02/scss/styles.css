@@ -10,6 +10,11 @@
     transform: translateY(0);
   }
 }
+.images-grid img, .media__image img, .card__image {
+  object-fit: cover;
+  max-width: 100%;
+}
+
 :root {
   box-sizing: border-box;
 }
@@ -230,7 +235,6 @@ figure {
 
 .card__image {
   opacity: 0.7;
-  object-fit: cover;
   flex-grow: 1;
 }
 
@@ -307,11 +311,6 @@ figure {
 }
 .media {
   padding: 1em 0;
-}
-
-.media__image img {
-  object-fit: cover;
-  width: 100%;
 }
 
 .media__body {
@@ -517,8 +516,6 @@ footer.container-black {
   display: flex;
 }
 .images-grid img {
-  object-fit: cover;
-  max-width: 100%;
   flex-grow: 1;
 }
 .images-grid .jace {

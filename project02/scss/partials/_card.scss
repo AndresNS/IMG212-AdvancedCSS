@@ -9,8 +9,8 @@
 }
 
 .card__image {
+    @extend %image-cover;
     opacity: 0.7;
-    object-fit: cover;
     flex-grow: 1;
 }
 
