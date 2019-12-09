@@ -1,0 +1,118 @@
+// list
+$list: 10px,
+20px,
+34px;
+
+//if else
+
+//each and for loops
+
+@each $size in $list {
+    @if $size==10px {
+        .font-#{$size} {
+            font-size: $size;
+        }
+    }
+
+    @else {
+        .font-#{$size} {
+            font-size: $size * 2;
+            margin: 0;
+        }
+    }
+}
+
+
+//placeholder
+
+%my-placeholder {
+    font-size: 22px;
+    color: antiquewhite;
+    background-color: blueviolet;
+}
+
+body{
+    @extend %my-placeholder;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1em;
+}
+
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.message {
+    @extend %message-shared;
+}
+
+.success {
+    @extend %message-shared;
+    border-color: green;
+}
+
+.error {
+    @extend %message-shared;
+    border-color: red;
+}
+
+.warning {
+    @extend %message-shared;
+    border-color: yellow;
+}
+
+// mixin (arguments)
+
+@mixin my-mixin ($arg1, $arg2: 0) {
+    width: 100px + $arg1;
+    height: 200px + $arg2;
+}
+
+.header {
+    @include my-mixin(200, 150)
+}
+.nav {
+    @include my-mixin(200, 150);
+    background-color: fade-out(#336699, 0.5);
+}
+
+//functions
+
+@function my-function($num1, $num2){
+    @return $num1 + $num2;
+}
+//   fadeout, transparentize, adjust hue
+
+
+// TRANSITIONS
+// -Explain the four transition properties and their purposes
+
+//property, duration, timing function, delay
+// -List the four types of transform properties
+//ease, ease-in, ease-out, ease-in-out
+
+
+// ANIMATE WITH KEYFRAMES
+// -Understand how to animate with keyframes using the @keyframe at-rule combined with animation properties.
+
+@keyframes my-animation{
+    0%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-100px);
+    }
+    0%{
+        transform: translateX(0);
+    }
+}
+
+
+.link {
+    animation: my-animation 0.3s ease 2;
+}
+// -Understand the basics of animation performance and which things can be animated smoothly / cheaply.

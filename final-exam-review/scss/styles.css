@@ -1,0 +1,73 @@
+.font-10px {
+  font-size: 10px;
+}
+
+.font-20px {
+  font-size: 40px;
+  margin: 0;
+}
+
+.font-34px {
+  font-size: 68px;
+  margin: 0;
+}
+
+body {
+  font-size: 22px;
+  color: antiquewhite;
+  background-color: blueviolet;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1em;
+}
+
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+.header {
+  width: 300px;
+  height: 350px;
+}
+
+.nav {
+  width: 300px;
+  height: 350px;
+  background-color: rgba(51, 102, 153, 0.5);
+}
+
+@keyframes my-animation {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-100px);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
+.link {
+  animation: my-animation 0.3s ease 2;
+}
+
+/*# sourceMappingURL=styles.css.map */
